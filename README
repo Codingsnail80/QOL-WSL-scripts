@@ -1,1 +1,9 @@
-Yo hope u like this.
+These are scripts that can improve your user experience on WSL (windows subsystem for linux).
+Many people want to use WSL for compiling and other devlopment purposes but sometimes that can be dificult to do since there are several oddities about WSL.
+These scripts are meant for a Debian-based linux distro. If your not sure which one you have it might be helpful for you to know that the default distro is Ubuntu, which does work with these scripts.
+
+DESRIPTION OF EACH SCRIPT:
+  -compile.sh temporaraly changes the system path then uses the command "make". This script is usefull for when you are trying to compile but are getting an error saying something along the lines of, "path contains spaces, tabs, and/or escape characters".
+
+  -givePermissions.sh will give your user the ability to read write and execute any file in your home directory. ******BE CAREFUL with this one. Giving every file read, write, and execute privledges could be harmful if there are any files in your home directory you dont trust dont use this.
+    however you can modify it. Once you have downloaded the file type "nano givePermissions.sh" it will then open the file and you ccan edit it. Navigate to the line that says "sudo chmod -R +rwx $USER" then change the "$USER" to the file path of the direcctory that you are compiling in.
